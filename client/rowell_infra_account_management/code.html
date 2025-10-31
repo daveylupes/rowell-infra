@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rowell Infra - Account Management</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0a8f5e",
+              "background-light": "#f6f8f7",
+              "background-dark": "#10221b",
+              "surface-light": "#ffffff",
+              "surface-dark": "#182c25",
+              "text-light": "#10221b",
+              "text-dark": "#f6f8f7",
+              "subtle-light": "#94a3b8",
+              "subtle-dark": "#9db9af",
+              "border-light": "#e2e8f0",
+              "border-dark": "#3b544b"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark px-6 lg:px-10 py-4">
+<div class="flex items-center gap-3">
+<div class="text-primary size-8">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold">Rowell Infra</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Docs</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">API Reference</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+<span>Dashboard</span>
+</button>
+<button class="size-10 rounded-full overflow-hidden">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhZwPo530e9BGSWVe47nNuYkucYLi7bqzF8epFTXCm-oMfLmIbcRhOkPO68dxGzt5yAfyrh-nDvc51_XgaprQCf4E3FfTBv7aVCpLdwy45bNIyoRC6WbQ6UicYLqXXAh-QrwrbNPN72uYofVGbBtBTZKDTQ24KvjZ_9KnbAorhqpGfzDpOum0M6UknqA_K4eJfbwzdZleDuDLZYi4ayWWzLNQdAwoCiqrtZjRW2eJfT5FCsNcWedBn8cNTfx1TTH9EnrfaosE8QKKf"/>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+<div>
+<h2 class="text-3xl font-bold">Accounts</h2>
+<p class="text-subtle-light dark:text-subtle-dark mt-1">Manage your accounts across different countries and networks.</p>
+</div>
+<button class="flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+<span class="material-symbols-outlined">add</span>
+<span>Create Account</span>
+</button>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-4 sm:p-6 rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex flex-col lg:flex-row gap-4 mb-6">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-subtle-light dark:text-subtle-dark">search</span>
+<input class="form-input w-full rounded-lg text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark focus:ring-primary focus:border-primary pl-10 h-11" placeholder="Search accounts by network, currency..." type="text"/>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="flex h-11 items-center justify-center gap-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark px-4 text-sm font-medium hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span>Country</span>
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">expand_more</span>
+</button>
+<button class="flex h-11 items-center justify-center gap-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark px-4 text-sm font-medium hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span>Network</span>
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">expand_more</span>
+</button>
+<button class="flex h-11 items-center justify-center gap-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark px-4 text-sm font-medium hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span>Status</span>
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">expand_more</span>
+</button>
+<button class="flex h-11 items-center justify-center gap-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark px-4 text-sm font-medium hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<span>Balance</span>
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">expand_more</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-background-light dark:bg-background-dark">
+<th class="p-4 text-sm font-medium text-subtle-light dark:text-subtle-dark uppercase tracking-wider">Country</th>
+<th class="p-4 text-sm font-medium text-subtle-light dark:text-subtle-dark uppercase tracking-wider">Network</th>
+<th class="p-4 text-sm font-medium text-subtle-light dark:text-subtle-dark uppercase tracking-wider">Balance</th>
+<th class="p-4 text-sm font-medium text-subtle-light dark:text-subtle-dark uppercase tracking-wider">Status</th>
+<th class="p-4 text-sm font-medium text-subtle-light dark:text-subtle-dark uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-light dark:divide-border-dark">
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="Nigerian Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzGaV8yT_2WdZAaBVRZsJyZ4ssMoCa-QIRuJhDWTKak0jVacT6JzAxXUq0EbP4JCy9FmD7WC5fPASbAeaHTYNfOpFKXmekF_cdLY0DH2G7dyfzfRg7kvkjNR7SjrWRPOM77eKKW3uujnZ1LgoV0QbDFeUfz--qRi9ydkfvux6cRzvOagvspWgzgehOncwfkEzAD1uY8xDZyxA2pgFmF1ps2wAX9_qHfbO_ypWO_-etgKGZU6wvJ58a891g9CD5d0Vp4TY0ow80_M6Q"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Naira Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">NGN 1,500,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="Kenyan Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJjs_KnD39Qep1pnBVsXchEZWZ-7ozBaccOxAWQ5bJReJ0Asc8_0Mgv6YVdbtWeIzIiYojcJthWy7uhRqStPk-qmeWnl4hwlsIMn5g2MbAtxZsR8RyFiI0R3Ba4-V6vLvGSZVc_ZR7UIEuG4HXVjEpTjbnlu6JlBdgMKM_YLycPBdvIPR552PI3c_o7Feqt-mQfVzaA93pQc_8btBxBjZyGbD8yemXY3JTt0C2QO5QQUzBJVoPMkWLxI8poLDMkvxGlY3nUUt-t6Sb"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Shilling Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">KES 800,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="Ghanaian Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvYhpYwvVyGhGCYzH4KNsGB9scmNemn7CfePw8OGTpn0W-lX50_3K4C3epjRKsdHVR3PzzVs6Npvrpdv4yv8g5uuuG07iwBYMT-LfeDf5avApZQD4GjuG20toc_Fg5diHTYPIh30y_MShDWwRN3x9ikX7rBMPZtir_FJB5V0UUD6ILZgx-o8H792MdaZ-fZ8lzgMp2Jpf7EqztziFMwUGLPDBAmaJE9QPEEJETm76hWtdwGt1LAbA9eLH83TdmGGDBBFk-r2NaNAeY"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Cedi Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">GHS 2,200,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="South African Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgIgYcs-v7bM_5TYanIlmuZ9fjQ6J_TopeHXNcWMYupJFspaCiJ2MGaA-hRHPfiwwZ152spoZIxrDjEHgZjMFRlqplBgLifCZbD5Uh5pNUgJFsCS2ImWPVT0wU2cfEd55EgrzezZSwhpEkNKiq3BiDt0a2B7bOL8RKul9x7PbtgtKNg9BFEl-NEjgDCICHgrUqDx1fGriL5MgPKPvdZQOB_PT57pNTyB7tnhuMk1nGUOf-sob8bwBD0vKA14QDdllmpaRtDd90T0l2"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Rand Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">ZAR 500,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="Ugandan Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtxCIbhonZ9l4AyvbZNqmGBNqjl-xDGKPZk0_BLdbvcnAfyB9N6xbCNrFhqu4qz670nsWnwHKyy-yJPmNM9tzXcQjFzPolMqj42qMmMfl6yMpLwMe1lXE6vpk54VHt81YSJ4hZigHKizxvwykkjb2-2dg-pyBrMrnfChMqEz1jEP3eSSB0t_TzasCySI4HiEsSvCUcpixdfbXDDeQHT1guWIHu9HEAe7Qj7pzSSi2Z8p7XJi5MdKL5FD3LNOxFZFAPCXVYI2-9H2eB"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Shilling Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">UGX 1,200,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="Tanzanian Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz78a9KpRKFFpMQWhxl6TrbfPjFmh5IwgfyM0oJ5Cscu5hI1e9l7HOwo4vuhVfpPCo_e_3FaUiKwzPMMsZutPyv7R4fSpyORhJMMDKthkELnqUG04zNDmW_w2oaHXrSXecOQA1EulKVvRUI_LCnMz6E6OfPTUa78FRc8Rzin6LXkKRViiI1wIaFjDX6wyx4c3kHkW24lmEDF6hnA1oUvbq1yjr5-59QlOFXj385rU9_xU4mNQiVISTF9m-9YuamyTetha2xgaC_YOF"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Shilling Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">TZS 900,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="Rwandan Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZUO-FaUaGnfPUgsTgyMZGqKOVOf9OC3dFKiCrDP64BCb8bOj8UuKeiPqu1F-sEepOPWBNBzaIt6yjOdjzTUdj8TOjFK7HjOrysDUWyXzHNYEco16-TEknwTBBHArjNN5Mxgefrm75X8DhakJ3k9VOvVHqRywyJpsmcKbSue6zpJq9Ax6KOx9vVGHLQTeF48yC3ZV5HdinDVHvBw0G0ykKFagYnV5g92-Nv6cPw0b9tn6OHC9TDybeUH26l59iBZgwa8fBOig87z7m"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Franc Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">RWF 600,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-background-light/50 dark:hover:bg-background-dark/50 transition-colors">
+<td class="p-4 align-middle">
+<div class="flex items-center gap-3">
+<img alt="Zambian Flag" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4xPy4x_LxxeX5YbGJky5SCrCgE3HfLIqHFMjICPHdpnMz8l5_PFlA8NmXaGsgNbxP-z_RWPH17My8ReldKxPtjm1bBHt3Q-7K1p7WuAuV9toNHEuLvWS7A2MR4zJ62_A2EktWY7NeUA5xuo0BpLXtvCENhHN9qEntLNu4oQQEGV5a3dj37YuWSuADvV91aqd_1_5CI-P-aLRnOGwK6vxMl61uak1gkTjM_dJpxoA5Va0XnmAq6FqrRImLurpz11hk22f-fjiM7xZ7"/>
+</div>
+</td>
+<td class="p-4 align-middle font-medium">Kwacha Account</td>
+<td class="p-4 align-middle text-subtle-light dark:text-subtle-dark">ZMW 700,000.00</td>
+<td class="p-4 align-middle">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Active</span>
+</td>
+<td class="p-4 align-middle text-right">
+<a class="text-sm font-medium text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

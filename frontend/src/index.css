@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rowell Infra Design System - African Fintech */
+
+@layer base {
+  :root {
+    /* Primary African Colors */
+    --primary-green: 125 100% 12%; /* Deep forest green - growth & prosperity */
+    --primary-gold: 51 100% 50%; /* Gold - wealth & opportunity */
+    --primary-white: 0 0% 100%; /* Clean & professional */
+    
+    /* Client Design Colors */
+    --primary: 160 100% 30%; /* #0a8f5e */
+    --background-light: 150 20% 97%; /* #f6f8f7 */
+    --background-dark: 150 50% 8%; /* #10221b */
+    --surface-light: 0 0% 100%; /* #ffffff */
+    --surface-dark: 150 30% 12%; /* #182c25 */
+    --text-light: 150 50% 8%; /* #10221b */
+    --text-dark: 150 20% 97%; /* #f6f8f7 */
+    --subtle-light: 215 25% 65%; /* #94a3b8 */
+    --subtle-dark: 150 25% 70%; /* #9db9af */
+    --border-light: 214 32% 91%; /* #e2e8f0 */
+    --border-dark: 150 20% 25%; /* #3b544b */
+    
+    /* Accent Colors */
+    --accent-orange: 14 100% 60%; /* Energy & innovation */
+    --accent-blue: 209 75% 47%; /* Trust & technology */
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-green)), hsl(125 100% 15%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--primary-gold)), hsl(45 100% 55%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 40%));
+    
+    /* Semantic Design Tokens */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 13%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+    
+    --primary: var(--primary-green);
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 210 20% 96%;
+    --secondary-foreground: var(--primary-green);
+    
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 13% 46%;
+    
+    --accent: var(--accent-orange);
+    --accent-foreground: 0 0% 100%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: var(--primary-gold);
+    --warning-foreground: 220 13% 13%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: var(--primary-green);
+    
+    /* Spacing Scale */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-24: 6rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--primary-green) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 13% 8%;
+    --foreground: 0 0% 98%;
+    
+    --card: 220 13% 10%;
+    --card-foreground: 0 0% 98%;
+    
+    --primary: var(--primary-gold);
+    --primary-foreground: 220 13% 8%;
+    
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 13% 65%;
+    
+    --accent: var(--accent-orange);
+    --accent-foreground: 0 0% 100%;
+    
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: var(--primary-gold);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground font-normal;
+    font-feature-settings: "cv02","cv03","cv04","cv11";
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Component Styles - Rowell Infra Design System */
+@layer components {
+  /* Hero Section */
+  .hero-section {
+    @apply relative min-h-screen flex items-center justify-center;
+    background: var(--gradient-hero);
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    @apply text-center text-white max-w-6xl mx-auto px-4;
+  }
+  
+  .hero-title {
+    @apply text-5xl md:text-7xl font-bold mb-6;
+    background: linear-gradient(135deg, #FFD700 0%, #FFF 50%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-subtitle {
+    @apply block text-xl md:text-2xl font-medium text-white/90 mt-4;
+  }
+  
+  /* Button Variants */
+  .btn-hero {
+    @apply px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white font-semibold rounded-2xl;
+    @apply hover:bg-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-hero-primary {
+    background: var(--gradient-gold);
+    @apply text-black border-transparent font-bold;
+    @apply hover:shadow-xl hover:shadow-yellow-500/30;
+  }
+  
+  /* Cards */
+  .card-rowell {
+    @apply bg-card border border-border rounded-2xl p-6;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-lg);
+    @apply hover:shadow-xl transition-all duration-300 hover:scale-[1.02];
+  }
+  
+  .overview-card {
+    @apply card-rowell flex items-center gap-4;
+  }
+  
+  .card-icon {
+    @apply text-3xl w-12 h-12 flex items-center justify-center rounded-xl;
+    background: var(--gradient-gold);
+  }
+  
+  /* Status Badges */
+  .status-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .status-active {
+    @apply bg-green-100 text-green-700;
+  }
+  
+  .status-success {
+    @apply bg-emerald-100 text-emerald-700;
+  }
+  
+  .status-pending {
+    @apply bg-yellow-100 text-yellow-700;
+  }
+  
+  /* Country Flags */
+  .country-display {
+    @apply inline-flex items-center gap-2 font-medium;
+  }
+  
+  /* Network Badges */
+  .network-badge {
+    @apply inline-flex items-center px-2 py-1 rounded-md text-xs font-medium;
+  }
+  
+  .network-stellar {
+    @apply bg-blue-100 text-blue-700;
+  }
+  
+  .network-hedera {
+    @apply bg-purple-100 text-purple-700;
+  }
+  
+  /* Trends */
+  .trend {
+    @apply text-sm font-medium;
+  }
+  
+  .trend.positive {
+    @apply text-emerald-600;
+  }
+  
+  .trend.negative {
+    @apply text-red-600;
+  }
+  
+  .trend.neutral {
+    @apply text-gray-500;
+  }
+}
+

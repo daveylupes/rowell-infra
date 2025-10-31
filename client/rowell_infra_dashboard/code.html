@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0a8f5e",
+            "background-light": "#f6f8f7",
+            "background-dark": "#10221b",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<title>Rowell Infra Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex h-screen">
+<aside class="flex w-64 flex-col bg-background-light dark:bg-background-dark border-r border-gray-200 dark:border-gray-800">
+<div class="flex h-16 items-center justify-center border-b border-gray-200 dark:border-gray-800">
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Rowell Infra</h1>
+</div>
+<nav class="flex-1 space-y-2 p-4">
+<a class="flex items-center gap-3 rounded-lg bg-primary/10 dark:bg-primary/20 px-3 py-2 text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-sm font-medium">Accounts</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">swap_horiz</span>
+<span class="text-sm font-medium">Transfers</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">key</span>
+<span class="text-sm font-medium">API Keys</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-sm font-medium">Documentation</span>
+</a>
+</nav>
+<div class="space-y-2 border-t border-gray-200 dark:border-gray-800 p-4">
+<button class="flex w-full items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white">
+          Create Account
+        </button>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span class="text-sm font-medium">Help &amp; Support</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 overflow-y-auto">
+<div class="p-8">
+<h1 class="text-3xl font-bold text-gray-900 dark:text-white">Dashboard</h1>
+<section class="mt-8">
+<h2 class="text-xl font-semibold text-gray-900 dark:text-white">Overview</h2>
+<div class="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+<div class="rounded-lg border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/20 p-6">
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Total Accounts</p>
+<p class="mt-2 text-3xl font-bold text-gray-900 dark:text-white">1,234</p>
+</div>
+<div class="rounded-lg border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/20 p-6">
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Transaction Volume</p>
+<p class="mt-2 text-3xl font-bold text-gray-900 dark:text-white">$567,890</p>
+</div>
+<div class="rounded-lg border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/20 p-6">
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Success Rate</p>
+<p class="mt-2 text-3xl font-bold text-gray-900 dark:text-white">98.5%</p>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-semibold text-gray-900 dark:text-white">Real-time Analytics</h2>
+<div class="mt-4 grid grid-cols-1 gap-6 lg:grid-cols-2">
+<div class="rounded-lg border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/20 p-6">
+<div class="flex items-start justify-between">
+<div>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Live Transaction Feed</p>
+<p class="mt-2 text-3xl font-bold text-gray-900 dark:text-white">123</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-green-500">
+<span>+10%</span>
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+</div>
+</div>
+<div class="mt-4 h-48">
+<svg fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 472 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#0a8f5e" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="rounded-lg border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/20 p-6">
+<div class="flex items-start justify-between">
+<div>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Network Status</p>
+<p class="mt-2 text-3xl font-bold text-gray-900 dark:text-white">99%</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-green-500">
+<span>+1%</span>
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+</div>
+</div>
+<div class="mt-8 grid h-40 grid-cols-2 items-end gap-6">
+<div class="flex flex-col items-center gap-2">
+<div class="w-full h-24 bg-primary/20 rounded-lg flex items-end"><div class="w-full bg-primary rounded-lg" style="height: 95%;"></div></div>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Stellar</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full h-24 bg-primary/20 rounded-lg flex items-end"><div class="w-full bg-primary rounded-lg" style="height: 98%;"></div></div>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Hedera</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-semibold text-gray-900 dark:text-white">Quick Actions</h2>
+<div class="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white">
+               Create Account
+            </button>
+<button class="rounded-lg bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-bold text-primary">
+                Send Transfer
+            </button>
+<button class="rounded-lg bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-bold text-primary">
+                View Documentation
+            </button>
+<button class="rounded-lg bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-bold text-primary">
+                Get Support
+            </button>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-semibold text-gray-900 dark:text-white">Recent Activity</h2>
+<div class="mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
+<table class="min-w-full divide-y divide-gray-200 dark:divide-gray-800">
+<thead class="bg-gray-50 dark:bg-gray-900/40">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400" scope="col">Activity</th>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400" scope="col">Timestamp</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200 dark:divide-gray-800 bg-background-light dark:bg-gray-900/20">
+<tr><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">Account created for user123</td><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">2023-11-15 10:00 AM</td></tr>
+<tr><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">Transfer initiated by user456</td><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">2023-11-15 11:30 AM</td></tr>
+<tr><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">API key generated for user789</td><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">2023-11-15 12:45 PM</td></tr>
+<tr><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">Transaction successful for user123</td><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">2023-11-15 01:15 PM</td></tr>
+<tr><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">Account updated for user456</td><td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">2023-11-15 02:30 PM</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-semibold text-gray-900 dark:text-white">Market Coverage</h2>
+<div class="mt-4">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYoRLMo7PANTE2EBEBKXhzzBKz-LUTkaeQATg_xBkYooMA01-pq-1wQ8Q9iTgIxtKnt_pv6Nd6FafFh-Tm9HAT8KtuBiPcp8cN-ODnWWH8O-Y4v3_W_-m6HbD8UbT7klvez7gLFvuxe1tmAyHxP58GpX7qJiEorhuh0wyvsU_eKkAuJCheURTxSiByQv7CTcJChCY49Eq1JTBB48tSeBpaWihaH7V5QTUPvSeUozKfcA3SWm-xvm5ESXMJembXYviWDTVNJRtHFGwX");'></div>
+</div>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -11,6 +11,11 @@
 
 **Rowell Infra** is an infrastructure platform that simplifies cross-border payments for African fintech applications. We provide unified APIs for both Stellar and Hedera networks, enabling developers to build payment solutions without managing complex blockchain integrations.
 
+### 🎥 Demo & Presentation Links
+
+- **🎬 Live Demo Video**: [Watch on Loom](https://www.loom.com/share/4bdd28337a674c6aa88c06f72c8b8ff0)
+- **📊 Pitch Deck**: [View on Canva](https://www.canva.com/design/DAG1hOyHZvo/xSIbibTwXwk0QkmW87XnlQ/view?utm_content=DAG1hOyHZvo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2b830c42c6)
+
 ### Problem Statement
 
 African cross-border payments face critical challenges:

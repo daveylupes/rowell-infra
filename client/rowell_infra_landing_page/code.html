@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Rowell Infra</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0a8f5e",
+            "background-light": "#f6f8f7",
+            "background-dark": "#10221b",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex flex-col min-h-screen w-full overflow-x-hidden">
+<header class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/10 bg-background-light/80 dark:bg-background-dark/80 px-4 sm:px-6 lg:px-10 py-3 backdrop-blur-sm">
+<div class="flex items-center gap-4">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-xl font-bold leading-tight text-gray-900 dark:text-white tracking-tight">Rowell Infra</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Product</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Docs</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+<div class="hidden md:flex items-center gap-2">
+<button class="flex items-center justify-center rounded h-9 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span class="truncate">Start Building</span>
+</button>
+<button class="flex items-center justify-center rounded h-9 px-4 bg-primary/20 dark:bg-primary/20 text-primary dark:text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/30 transition-colors">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col">
+<section class="relative min-h-[60vh] flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-20">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkQVbCfQvwHWDAIllCKYBnYqWyxPbWPzYFioTOwQEH_CJpc0km4xwTV15HJLlOTly-cNrBA3qcBBq__jCvClQSP6tiHyC8A90JtmAyL8Fu8PGw4BQNlnbboxlVSwweSCjHf7ocZhPGQj1cPvC_zuok9GvXe_lpwfQ6f2l7fVVhHkUAOH0995oniLJuSADxb6wpPgAAvZ6Q_VRUVAEb-g8uRPEBNGQMceVQBehtXGbZS-vZkQp-YXS5rkYoGRoo1xOCYerSCdiT3BNe");'></div>
+<div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center gap-6">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tighter">Build the future of African payments</h1>
+<p class="text-lg sm:text-xl text-gray-200 max-w-2xl">Rowell Infra is the infrastructure platform that makes building cross-border payment applications for Africa as simple as sending an email.</p>
+<button class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span class="truncate">Start Building</span>
+</button>
+</div>
+</section>
+<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">The Problem</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Traditional remittance systems are slow, expensive, and fragmented, hindering economic growth and financial inclusion across Africa.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 items-center text-center bg-background-light dark:bg-primary/10 p-6 rounded-xl border border-primary/20 dark:border-primary/20">
+<div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">High Fees</h3>
+<p class="text-gray-600 dark:text-gray-300">Average remittance fees to Africa are among the highest globally, eroding the value of hard-earned money.</p>
+</div>
+<div class="flex flex-col gap-4 items-center text-center bg-background-light dark:bg-primary/10 p-6 rounded-xl border border-primary/20 dark:border-primary/20">
+<div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">hourglass_empty</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Slow Settlements</h3>
+<p class="text-gray-600 dark:text-gray-300">Settlement times can take days, delaying critical financial support for families and businesses.</p>
+</div>
+<div class="flex flex-col gap-4 items-center text-center bg-background-light dark:bg-primary/10 p-6 rounded-xl border border-primary/20 dark:border-primary/20">
+<div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">public_off</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Limited Reach</h3>
+<p class="text-gray-600 dark:text-gray-300">Many African countries lack seamless cross-border payment infrastructure, limiting economic opportunities.</p>
+</div>
+</div>
+</section>
+<section class="bg-primary/5 dark:bg-primary/10 py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">Our Solution</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Rowell Infra provides a unified, fast, and cost-effective platform for building cross-border payment applications across Africa.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 items-center text-center p-6">
+<div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">api</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Unified API</h3>
+<p class="text-gray-600 dark:text-gray-300">A single, intuitive API simplifies integration and reduces development time.</p>
+</div>
+<div class="flex flex-col gap-4 items-center text-center p-6">
+<div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">3-Second Settlements</h3>
+<p class="text-gray-600 dark:text-gray-300">Experience near-instantaneous settlements, enabling real-time transactions.</p>
+</div>
+<div class="flex flex-col gap-4 items-center text-center p-6">
+<div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">public</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">20+ African Countries</h3>
+<p class="text-gray-600 dark:text-gray-300">Access a growing network of over 20 African countries, with more added regularly.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+<div class="bg-primary/10 dark:bg-primary/20 p-8 rounded-xl">
+<p class="text-base font-medium text-primary dark:text-gray-200">African Remittance Market</p>
+<p class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mt-2">$86B+</p>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-8 rounded-xl">
+<p class="text-base font-medium text-primary dark:text-gray-200">Mobile Money Users in Africa</p>
+<p class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mt-2">500M+</p>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight text-center mb-12">Trusted by innovative companies</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center">
+<div class="w-full h-24 bg-center bg-no-repeat bg-contain rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCzJJVmElNEegNnQtbDpA234peIzRz6mUXxdvI8qsQKk87kMV9UhVmdy0ms3ELESgOhoZc7Cmsy10Yx422kVSMj-muUabLIb_mMZXsYG2MXgl3uwb33y734hoqz4UrxQ6mtgneYyGGfbeplSza0Zel5A5csH9W-QleAX3O1TQYSSTdXu8k79C1CN_VETJwv_VvE_zvjahTRONfDko3_9fiXV3prF6GEwp0cfZOp4E-h-aTFzErMIkt02W_MnFJC8YrHr6iZz0JktC-h"); filter: grayscale(1) brightness(2) contrast(0.5);'></div>
+<div class="w-full h-24 bg-center bg-no-repeat bg-contain rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZG5p0aO5coGl_CNJ4cRWsGMfNDaEXs8Lqb5g2Ogy9V0xAlUBkqWe-8N-VBvvJPy-LnL_7jmMj2b_RL90QPFshvFNSG6Z3qS4AqnAzTdTKkEnHLk2RznJOuZwzyIAtjh-u3HfTV4jtrYi137VptWBiFSCFtn3OEZ7R47GSnx06KfXbLcdp3op9YUu3syAfJJDS6RRFKtpIQQnmEYUFsAvpdBYxRQvAL39TlZ7h4ByE34O6Xc2qvxh45OeOR-3XNzzxjr5ht86pN7Iq"); filter: grayscale(1) brightness(2) contrast(0.5);'></div>
+<div class="w-full h-24 bg-center bg-no-repeat bg-contain rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAip9qnjKOxYVsaaiQGKtamnBBQ-jjg6FYyqx4f0hnHhRAS4LibK-y4VmdGD2Ww8y_sKIbsSgv7TI9uFVcNy3sy6PJY8WFbB2VyyQsfGY4ov0cFOZpg4a8m7xtcP2xwwEMA7_HMJ1-leFlkEtzSNskaZzLTFyLGmP4Amn5ZI6FC4-XPXKc2Ib3BH9HPtFVLG1iUP-7cwHjYSkmus_iuMmwBZxHTS8X8HWmgLe2v-TE66k7BVa5dpXuME2SnMrBq1x1GI78rz9kuSjoa"); filter: grayscale(1) brightness(2) contrast(0.5);'></div>
+<div class="w-full h-24 bg-center bg-no-repeat bg-contain rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSFJU1ZKlkfocleYm8YqioCV3IzeFilTl-SoKm1oTSE6Z7cW1IXevIigpPNBNxZSHzy3I2xauDJGIk7vVFjypllcTqvGPOWU1YmkCwwdko4BtXZkczupU0ofP821RSabqJuEUltLlG17PFGKc5aJJe-GNIXlhjP-_XgAkgC6QSr1Ph5Nnx02WoM1vyguEDszshoMI4dGD3WV-4B-Od4M_F1D3UxBY2fSjdlubmSUlP_hDwOqJdKzsoNI3fn6Ee8gLYOMzIPrjgQIlK"); filter: grayscale(1) brightness(2) contrast(0.5);'></div>
+<div class="w-full h-24 bg-center bg-no-repeat bg-contain rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlwxPJNd6b6lv_8_dZ--6i6gk2hN-vJ9foqtV_iI5aFpLKs08ytAvrxbpyYxu5CAmfw0luid615c_y1qkZZEPv4fW3Y0cIr_pczCiXxqsfmV2QEQHwQaj0vpdnA1kTHjVzueNh63_mD4esa2xPm-kdbF7WwVJ9k0qiNxL8Oq7Y57d1oyibw-j7tIbucLjrMqXlNa5R-dYQzOPtheWiTIbmBLPvAo3DsW8mQ432dI1wV25UV03_oJhIK34dzG7N2GDNoIPA4ZVxJNs1"); filter: grayscale(1) brightness(2) contrast(0.5);'></div>
+<div class="w-full h-24 bg-center bg-no-repeat bg-contain rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBywXJvOwDi41E7ADNv8tCH3a6FEZmFZF7MknnMEH1gDh7FVUzBuf-5bpd0w1NE9VRDVLKozGp35toLkfO82oyaPQi9--2H7v5ktoUKlZcgMW9agAod-Vi4dFqU7hgZ7r7OD_FawlttlVqz93Kf884KPlHHQVOF-6aA5YvxkDbMKZcipQox5Ec-RlHDpf-qY6YZvonZAw8Z--nxJquH0kyi7eBBS_DPnckdFZo3phWLLBDfd6TONUa86uCE9eoBUMLRAQPIfiiTOBfy"); filter: grayscale(1) brightness(2) contrast(0.5);'></div>
+</div>
+</div>
+</section>
+<section class="bg-primary/5 dark:bg-primary/10 py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">Ready to build the future of African payments?</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Join the growing community of developers and businesses leveraging Rowell Infra's powerful platform.</p>
+<div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+<button class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span class="truncate">Start Building</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary/20 dark:bg-primary/20 text-primary dark:text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/30 transition-colors">
+<span class="truncate">View Documentation</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/10">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+<a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Product</a>
+<a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Docs</a>
+<a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Support</a>
+<a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</nav>
+<p class="text-sm text-gray-500 dark:text-gray-400">© 2024 Rowell Infra. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
